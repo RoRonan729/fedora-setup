@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Ronan Gameshow Console
+Comment=Scoreboard, clock, questions, buzzers, pen boards and Wheel of Fortune for the house game shows
+Exec=__HOME__/claude/RonanGameshowConsole/out/RonanGameshowConsole-linux-x64/RonanGameshowConsole
+Path=__HOME__/claude/RonanGameshowConsole
+Terminal=false
+Categories=Game;Education;
+StartupWMClass=RonanGameshowConsole
