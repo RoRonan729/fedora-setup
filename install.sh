@@ -185,8 +185,10 @@ phase 80-system "System tweaks: fingerprint, timezone, hostname, firmware" && {
 
   sudo timedatectl set-timezone "$SETUP_TIMEZONE" || true
 
-  if [[ -z "$SETUP_HOSTNAME" && -t 0 ]]; then
-    read -rp "Hostname for this machine [$(hostnamectl --static)]: " SETUP_HOSTNAME
+  # Only ask if the installer left the generic default name
+  cur="$(hostnamectl --static 2>/dev/null || hostname)"
+  if [[ -z "$SETUP_HOSTNAME" && -t 0 && ( -z "$cur" || "$cur" == fedora || "$cur" == localhost* ) ]]; then
+    read -rp "Hostname for this machine [$cur]: " SETUP_HOSTNAME
   fi
   [[ -n "$SETUP_HOSTNAME" ]] && sudo hostnamectl set-hostname "$SETUP_HOSTNAME"
 
