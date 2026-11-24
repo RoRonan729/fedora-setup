@@ -1,0 +1,6 @@
+[Bell]
+VisibleBellInvert=true
+VisibleBellPause=100
+
+[Keyboard]
+ToggleKeysBeep=true

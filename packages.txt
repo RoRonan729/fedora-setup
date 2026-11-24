@@ -1,0 +1,86 @@
+# dnf packages beyond the stock Fedora KDE spin. One per line, # = comment.
+# Already-installed packages are skipped, so the list is generous on purpose.
+
+# --- apps ---
+google-chrome-stable
+code
+discord
+gimp
+vlc
+vlc-plugin-gstreamer
+phonon-qt6-backend-vlc
+video-downloader
+neochat
+timeshift
+kamoso
+kcalc
+filelight
+kde-partitionmanager
+kleopatra
+kwalletmanager5
+kmahjongg
+kmines
+kpat
+okular
+gwenview
+spectacle
+skanpage
+libreoffice-writer
+libreoffice-calc
+libreoffice-impress
+libreoffice-draw
+libreoffice-math
+
+# --- desktop look ---
+kvantum
+papirus-icon-theme
+aurorae
+kde-gtk-config
+plasma-workspace-wallpapers
+
+# --- system / cli ---
+tailscale
+fwupd
+fprintd
+fprintd-pam
+intel-lpmd
+thermald
+tuned
+tuned-ppd
+plocate
+tree
+dos2unix
+unzip
+zip
+rsync
+wget2-wget
+bind-utils
+nmap-ncat
+tcpdump
+traceroute
+whois
+mtr
+smartmontools
+nvme-cli
+exfatprogs
+ntfs-3g
+podman
+toolbox
+
+# --- build tools (VirtualBox / akmods / node projects) ---
+gcc
+make
+kernel-devel
+kernel-headers
+elfutils-libelf-devel
+nodejs
+npm
+git
+
+# --- gstreamer bits so Dolphin/Gwenview thumbnails and KDE media apps work ---
+gstreamer1-plugins-good
+gstreamer1-plugins-bad-free
+gstreamer1-plugins-ugly-free
+gstreamer1-plugin-libav
+gstreamer1-plugin-openh264
+ffmpegthumbs

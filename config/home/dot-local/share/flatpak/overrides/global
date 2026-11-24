@@ -1,0 +1,2 @@
+[Context]
+filesystems=xdg-data/fonts:ro;xdg-data/icons:ro;
