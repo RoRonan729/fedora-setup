@@ -1,0 +1,9 @@
+# scope  app-id        (scope = system or user, matching the original laptop)
+system org.mozilla.thunderbird
+system org.vinegarhq.Sober
+system space.bigrat.mocktail
+user   com.spotify.Client
+user   com.todoist.Todoist
+user   com.valvesoftware.Steam
+user   com.moonlight_stream.Moonlight
+user   com.modrinth.ModrinthApp
